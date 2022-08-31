@@ -2,7 +2,7 @@
 
 import pandas as pd
 #from sklearn.model_selection import train_test_split
-#from sklearn.ensemble import RandomForestClassifier 
+from sklearn.ensemble import RandomForestRegressor 
 #from sklearn import metrics
 from flask import Flask, request, render_template
 #import re
@@ -23,7 +23,7 @@ def loadPage():
 @app.route("/predict", methods=['POST'])
 def predict():
     
-    model = pickle.load(open("xgboost_tuned.sav", "rb"))
+    model = pickle.load(open("RF_tuned.sav", "rb"))
     
 
     inputQuery1 = request.form['query1']
