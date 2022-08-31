@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<style>	h1 {text-align: center;} </style>
+	<style>	label {text-align: center;} </style>
+</head>
+<body>
+
+<h1>Volume Forecasting Solution</h1><br><br>
+<form action="/action_page.php">
+<!--Button to show the previous forecast-->
+<button type="button" style="height:50px ; width: 500px" id="submitButton">Click here to generate Volume forecast</button><br><br>
+
+<h3>Upload dataset</h3>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit"><br><br><br>
+</form>
+<!--Defining the input blocks-->
+
+<h2>Scenario Based Forecasting</h2>
+	<label for="">Week No</label>
+	<input id="Week No" name="Week No" value="" >
+		
+	<label for="">Year</label>
+	<input id="Year" name="Year" value="" >
+
+	<label for="">Mortgage Rate</label>
+	<input id="Mortgage Rate" name="Mortgage Rate" value="" ><br><br>
+
+	<label for="">Treasury Yield</label>
+	<input id="Treasury Yield" name="Treasury Yield" value="">
+	
+	<label for="">Unemployment rate</label>
+	<input id="Unemployment rate" name="Unemployment rate" value="" >
+
+	<label for="">GDP</label>
+	<input id="gdp" name="gdp" value=""><br><br>
+
+	<label for="">Consumer Confidence Index</label>
+	<input id="CCI" name="CCI" value="" >
+
+	<label for="">Disposable Income</label>
+	<input id="DI" name="DI" value="" ><br><br>
+	
+<!--Button to generate the forecast-->
+<p>Please click on submit to generate the forecast</p>
+<button type="button" onclick="alert('Forecast for selected period will be downloaded.')">Submit</button><br><br><br>
+
+<!--Button to reset all the data values-->
+<p>Click here to reset all the predictors</p>
+<input type="reset" value="Reset">        
+    </body>
+<script src="{{url_for('static', filename='javascript/mainscript.js')}}"></script>
+
+
+</html>
