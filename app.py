@@ -8,7 +8,7 @@ from flask import Flask, request, render_template
 #import re
 #import math
 import pickle
-from xgboost import XGBRegressor
+#from xgboost import XGBRegressor
 
 app = Flask("__name__")
 
