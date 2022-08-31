@@ -1,13 +1,12 @@
 # coding: utf-8
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier 
-from sklearn import metrics
+#from sklearn.model_selection import train_test_split
+#from sklearn.ensemble import RandomForestClassifier 
+#from sklearn import metrics
 from flask import Flask, request, render_template
-import re
-import math
-import pickle
+#import re
+#import math
 import pickle
 from xgboost import XGBRegressor
 
